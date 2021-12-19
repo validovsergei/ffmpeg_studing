@@ -1,0 +1,3 @@
+/home/validov/projects/ffmpeg/CMakeFiles/rebuild_cache.dir
+/home/validov/projects/ffmpeg/CMakeFiles/edit_cache.dir
+/home/validov/projects/ffmpeg/CMakeFiles/ffmpeg.dir
