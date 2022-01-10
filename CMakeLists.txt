@@ -18,6 +18,6 @@ find_library(AVUTIL_LIBRARY avutil)
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-add_executable( ffmpeg main.cpp )
+add_executable( ffmpeg main.cpp decoder/decode_ffmpeg.cpp utils/frame_handler.cpp utils/histogramm.cpp utils/gray_histogramm.cpp utils/bgr_histogramm.cpp)
 target_include_directories(ffmpeg  PRIVATE ${AVCODEC_INCLUDE_DIR} ${AVFORMAT_INCLUDE_DIR} ${AVUTIL_INCLUDE_DIR} ${SWSCALE_INCLUDE_DIR})
 target_link_libraries( ffmpeg PRIVATE ${OpenCV_LIBS} ${AVCODEC_LIBRARY} ${AVFORMAT_LIBRARY} ${AVUTIL_LIBRARY} ${SWSCALE_LIBRARY})
